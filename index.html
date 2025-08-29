@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jonathan Wiley - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Jonathan Wiley
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jonnywiley0@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +12024927202
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="man-1351317_1280.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, Jonathan Wiley! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a software developer with a strong background in IT support, system administration, and backend development.  
+            I have experience building applications, deploying SaaS MVPs, and working with technologies such as Python, Django, Flask, React Native, and SQL.  
+            I have supported organizations like the World Bank, APEX Systems, and credit unions, where I provided advanced technical solutions and end-user support.  
+             
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>10 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>6 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png"/>
+            <h6>Python</h6>
+            <p>6 years experience</p>
+          </div>  
+          
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png"/>
+            <h6>Java</h6>
+            <p>4 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png"/>
+            <h6>Node.js</h6>
+            <p>3 years experience</p>
+          </div>  
+          <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>SIEM (Security Information and Event Management) Mini System</h3>
+            <ul>
+              <li>Create a simplified SIEM platform that collects system logs (from Linux/Windows servers), parses them, and applies detection rules to identify suspicious activity </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Phishing Email Detection System</h3>
+            <ul>
+              <li>Build a machine learning–powered tool that can detect phishing attempts in emails by analyzing subject lines, body content, and sender information.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Vulnerability Scanner for Web Applications</h3>
+            <ul>
+              <li>Develop a lightweight scanner that crawls a target web application and checks for common vulnerabilities</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Jonathan is one of the most dependable IT professionals I’ve had on my team. He consistently takes ownership of complex technical issues and resolves them quickly, often serving as the subject matter expert when others get stuck.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Working alongside Jonathan was a great experience. He’s collaborative, approachable, and always willing to jump in to help the team."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Jonathan has provided me with excellent support on several occasions. He not only solved the issue at hand but also explained the solution in a way that was easy to understand. "
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
